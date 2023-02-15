@@ -1,6 +1,18 @@
-<?php
-	header("Access-Control-Allow-Origin: *");
-    error_reporting(0);
-    error_reporting(E_ERROR | E_PARSE);
-    header("content-type:text/javascript;charset=utf-8");
-    $link = mysqli_connect('localhost', 'root', '', "shoppingmall");
+
+        <?php
+
+        $servername = 'localhost';
+        $username = 'root';
+        $password = '';
+        $dbname = 'shoppingmall';
+        
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        
+        if($conn->connect_error){
+            die('Connect failed' . $conn->connect_error);
+        }
+        
+        ?>
+
+
+

@@ -15,12 +15,11 @@ if (!$link->set_charset("utf8")) {
     exit();
 	}
 
-if (isset($_GET)) {
-	if ($_GET['isAdd'] == 'true') {
-				
-		$user = $_GET['user'];
+if (isset($_POST)) {
+	if ($_POST['isAdd'] == 'true') {
+		$user = $_POST['user'];
 
-		$result = mysqli_query($link, "SELECT * FROM user WHERE user = '$user'");
+		$result = mysqli_query($link, "SELECT * FROM user WHERE user = '$user' ");
 
 		if ($result) {
 
@@ -33,7 +32,7 @@ if (isset($_GET)) {
 
 		} //if
 
-	} else echo "Welcome Master UNG";	// if2
+	} else echo "สวัสดีจ้า";	// if2
    
 }	// if1
 

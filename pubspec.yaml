@@ -38,6 +38,21 @@ dependencies:
   cupertino_icons: ^1.0.2
   image_picker: ^0.8.6
   dio: ^4.0.6
+  shared_preferences: ^2.0.15
+  firebase_core: ^2.4.1
+  cached_network_image: ^3.2.3
+  badges: ^2.0.3
+  geolocator: ^7.5.0
+  sqflite: ^2.2.3
+  flutter_svg: ^1.1.6
+  gallery_saver: ^2.3.2
+  intl: ^0.18.0
+  flutter_launcher_icons: ^0.11.0 
+  
+
+flutter_icons:
+  android: "launcher_icon"
+  image_path: "assets/img/logo2.png"
 
 dev_dependencies:
   flutter_test:
@@ -62,7 +77,52 @@ flutter:
   uses-material-design: true
   assets: 
     - assets/img/logo.png
+    - assets/img/logo2.png
     - assets/img/profile.png
+    - assets/products/ALDO ALBONNON 2790.png
+    - assets/products/ALDO CELESTICA 2490.png
+    - assets/products/ALDO MUDDAL 2990.png
+    - assets/products/ALDO OCOMAN 1690.png
+    - assets/products/ALDO OLILINYTH 2290.png
+    - assets/products/ALDO QERRAMAS 2790.png
+    - assets/products/Charles & Keith Chain Strap Boxy Bag 2990.png
+    - assets/products/Charles & Keith Gabine Belted Hobo 2990.png
+    - assets/products/Charles & Keith Gabine Tweed Bucket Bag Navy 2590.png
+    - assets/products/Charles & Keith Lola Envelope Crossbody Bag Caramel 2990.png
+    - assets/products/Charles & Keith Lula Patent Buckled Bag Light Grey 3390.png
+    - assets/products/Charles & Keith Waverly Scallop Trim 3190.png
+    - assets/bg/Charles & Keith Chain Strap Boxy Bag 2990 bg.jpg
+    - assets/bg/Charles & Keith Gabine Belted Hobo 2990 bg.jpg
+    - assets/bg/Charles & Keith Gabine Tweed Bucket Bag Navy 2590 bg.jpg
+    - assets/bg/Charles & Keith Lola Envelope Crossbody Bag Caramel 2990 bg.jpg
+    - assets/bg/Charles & Keith Lula Patent Buckled Bag Light Grey 3390 bg.jpg
+    - assets/bg/Charles & Keith Waverly Scallop Trim 3190 bg.jpg
+    - assets/products/Coach Bandit Shoulder Bag In Signature Textile Jacquard 29500.png
+    - assets/products/Coach Pillow Madison Shoulder Bag 18 With Quilting 25900.png
+    - assets/products/Coach Pillow Tabby Shoulder Bag 18 19900.png
+    - assets/products/Coach Small Camera Bag With Quilting 12950.png
+    - assets/products/Coach Studio Shoulder Bag 19 In Signature Jacquard 18500.png
+    - assets/products/Coach Willow Bucket Bag In Colorblock 18500.png
+    - assets/bg/Coach Bandit Shoulder Bag In Signature Textile Jacquard 29500 bg.jpg
+    - assets/bg/Coach Pillow Madison Shoulder Bag 18 With Quilting 25900 bg.jpg
+    - assets/bg/Coach Pillow Tabby Shoulder Bag 18 19900 bg.jpg
+    - assets/bg/Coach Small Camera Bag With Quilting 12950 bg.jpg
+    - assets/bg/Coach Studio Shoulder Bag 19 In Signature Jacquard 18500 bg.jpg
+    - assets/bg/Coach Willow Bucket Bag In Colorblock 18500 bg.jpg
+    - assets/products/LynCleo Xs Crossbody Bag 2590.png
+    - assets/products/LynLavie Xs Shoulder Bag 2590.png
+    - assets/products/LynPhoenix Bucket Bag 2790.png
+    - assets/products/LynPhoenix Crossbody Bag 2390.png
+    - assets/products/LynSpike Bucket S Bucket Bag 2990.png
+    - assets/bg/LynCleo Xs Crossbody Bag 2590 bg.jpg
+    - assets/bg/LynLavie Xs Shoulder Bag 2590 bg.jpg
+    - assets/bg/LynPhoenix Bucket Bag 2790 bg.jpg
+    - assets/bg/LynSpike Bucket S Bucket Bag 2990 bg.jpg
+    - assets/img/heart.png
+    - assets/img/imagebg.png
+    - assets/img/bbl.svg
+    - assets/img/kbank.svg
+    - assets/img/checkout.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

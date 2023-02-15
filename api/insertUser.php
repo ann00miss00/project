@@ -15,23 +15,23 @@ if (!$link->set_charset("utf8")) {
     exit();
 	}
 
-if (isset($_GET)) {
-	if ($_GET['isAdd'] == 'true') {
+if (isset($_POST)) {
+	if ($_POST['isAdd'] == 'true') {
 				
-		$avatar = $_GET['avatar'];
-		$email = $_GET['email'];
-		$password = $_GET['password'];
-		$username = $_GET['username'];
-		$name = $_GET['name'];
-		$phone = $_GET['phone'];
-		$address = $_GET['address'];
-		$road = $_GET['road'];
-		$detail = $_GET['detail'];
+		$avatar = $_POST['avatar'];
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		$user = $_POST['user'];
+		$name = $_POST['name'];
+		$phone = $_POST['phone'];
+		$address = $_POST['address'];
+		$road = $_POST['road'];
+		$detail = $_POST['detail'];
 		
 		
 		
 							
-		$sql = "INSERT INTO `user`(`id`, `avatar`, `email`, `password`, `username`, `name`, `phone`, `address`, `road`, `detail`) VALUES (NULL,'$avatar','$email','$password','$username','$name','$phone','$address','$road','$detail')";
+		$sql = "INSERT INTO `user`(`id`, `avatar`, `email`, `password`, `user`, `name`, `phone`, `address`, `road`, `detail`) VALUES (NULL,'$avatar','$email','$password','$user','$name','$phone','$address','$road','$detail')";
 
 		$result = mysqli_query($link, $sql);
 
@@ -41,7 +41,7 @@ if (isset($_GET)) {
 			echo "false";
 		}
 
-	} else echo "Welcome Master UNG";
+	} else echo "สวัสดีค่ะ";
    
 }
 	mysqli_close($link);
